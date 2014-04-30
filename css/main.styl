@@ -5,19 +5,19 @@
 	margin 0px
 	padding 0px
 
-body
-	font-family: 'Mako', sans-serif;
-	font-size 16px
-	height 100%
-	text-align center
-	width 100%
-
 html
 	background url(../img/bg.jpg) no-repeat center center fixed
 	-webkit-background-size cover
 	-moz-background-size cover
 	-o-background-size cover
 	background-size cover
+
+body
+	font-family 'Mako', sans-serif
+	font-size 16px
+	height 100%
+	text-align center
+	width 100%
 
 nav
 	text-align left
@@ -31,12 +31,23 @@ nav
 		a
 			color #FFFFFF
 			text-decoration none
+			-webkit-transition background 2s ease
+			-moz-transition background 2s ease
+			-ms-transition background 2s ease
+			-o-transition background 2s ease
+			transition background 2s ease
 		a:hover
-			color #222
+			background-color #e74c3c
+			color #FFF
+			-webkit-transition background 2s ease
+			-moz-transition background 2s ease
+			-ms-transition background 2s ease
+			-o-transition background 2s ease
+			transition background 2s ease
+			padding .5em
 
 .clear
 	clear both
-
 
 .franja
 	color #FFFFFF
@@ -61,7 +72,6 @@ nav
 		line-height 24px
 
 .contenido
-	background red
 	height auto
 	float right
 	margin 1em
@@ -77,6 +87,177 @@ nav
 		display inline-block
 		float right
 		padding 0 2em 0 0
+
+
+/* ***************************** MEDIA QUERIES ******************* */
+@media screen and (min-width: 0px) and (max-width: 319px)
+	*
+		border 0px
+		margin 0px
+		padding 0px
+
+	body
+		background-color #e74c3c
+		font-family: 'Mako', sans-serif;
+		font-size 16px
+		height 100%
+		text-align center
+		width 100%
+
+	html
+		background url(../img/bg.jpg) no-repeat center center fixed
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+	nav
+		margin 0px
+		margin 0 auto
+		padding 0px
+		width 85%
+	.container
+		height auto
+		margin 0px
+		padding 0px
+		width 100%
+	.franja
+		height auto
+		margin 0 auto
+		margin-left .6em
+		margin-bottom 4em
+		position absolute
+		width 95%
+	.redesFooter
+		display none
+
+	.redes320
+		height auto
+		margin 0px
+		margin-top 1em
+		padding 0px
+		width 100%
+		ul li
+			display inline-block
+			list-style none
+/* *************************************************************** */
+
+@media screen and (min-width: 320px) and (max-width: 479px)
+	*
+		border 0px
+		margin 0px
+		padding 0px
+
+	body
+		background-color #e74c3c
+		font-family: 'Mako', sans-serif;
+		font-size 16px
+		height 100%
+		text-align center
+		width 100%
+
+	html
+		background url(../img/bg.jpg) no-repeat center center fixed
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+		width 100%
+		height auto
+	nav
+		margin 0px
+		margin 0 auto
+		padding 0px
+		width 90%
+	.container
+		height auto
+		margin 0px
+		padding 0px
+		width 100%
+	.franja
+		background-color rgba(0,0,0,0.30)
+		height 100%
+		margin 0 auto
+		margin-left .6em
+		margin-bottom 4em
+		position absolute
+		width 95%
+	.redesFooter
+		display none
+
+	.redes320
+		height auto
+		margin 0px
+		margin-top 1em
+		padding 0px
+		width 100%
+		ul li
+			display inline-block
+			list-style none
+/* ************************************************************** */
+
+@media screen and (min-width: 480px) and (max-width: 759px)
+	*
+		border 0px
+		margin 0px
+		padding 0px
+	body
+		background-color #e74c3c
+		font-family: 'Mako', sans-serif;
+		font-size 16px
+		height 100%
+		text-align center
+		width 100%
+	nav
+		margin 0px
+		margin 0 auto
+		padding 0px
+		width 90%
+	.container
+		height auto
+		margin 0px
+		padding 0px
+		width 100%
+	.franja
+		background-color rgba(0,0,0,0.30)
+		height auto
+		margin 0 auto
+		margin-left .6em
+		margin-bottom 4em
+		width 95%
+	.redesFooter
+		display none
+
+	.redes320
+		height auto
+		margin 0px
+		margin-top 1em
+		padding 0px
+		width 100%
+		ul li
+			display inline-block
+			list-style none
+/* *************************************************************** */
+
+@media screen and (min-width: 760px) and (max-width: 1019px)
+	nav
+		width 90%
+	.franja
+		width 50%
+	.redes320
+		display none
+/* *************************************************************** */
+
+@media screen and (min-width: 1020px)
+	.redes320
+		display none
+/* *************************************************************** */
+
+@media screen and (min-width: 1021px)
+	.redes320
+		display none
+
+/* ***************************** FINAL MEDIA QUERIES ********************************** */
+
 
 
 
